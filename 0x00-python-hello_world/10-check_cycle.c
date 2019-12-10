@@ -7,27 +7,30 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t **head;
-	listint_t *tort;
-	listint_t *hare;
+	listint_t *tort = NULL;
+	listint_t *hare = NULL;
 
-	head = *list;
+	if (list == NULL)
+	{
+		free(list);
+		return (0);
+	}
 
-	hare = head;
+	tort = list;
+
+	hare = tort;
 
 	while (tort && hare && hare != NULL)
 	{
 		tort = tort->next;
 		hare = hare->next;
-	}
 
-	if (tort != hare)
-	{
-		tort = tort->next;
-		hare = hare->next->next;
+		if (tort != hare)
+		{
+			tort = tort->next;
+			hare = hare->next->next;
+		}
 	}
-	else
-		tort = head;
 
 	return (0);
 }
