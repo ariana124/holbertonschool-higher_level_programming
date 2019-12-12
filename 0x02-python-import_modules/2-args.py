@@ -6,9 +6,9 @@ if __name__ == "__main__":
     if count == 1:
         print("0 arguments.")
     elif count == 2:
-        print("1 argument: ")
+        print("1 argument:")
     else:
-        print("{:d} arguments: ".format(count - 1))
+        print("{:d} arguments:".format(count - 1))
 
     for arg in range(1, count):
         print("{:d}: {:s}".format(arg, sys.argv[arg]))
