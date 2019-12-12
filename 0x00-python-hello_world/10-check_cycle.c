@@ -10,27 +10,19 @@ int check_cycle(listint_t *list)
 	listint_t *tort = NULL;
 	listint_t *hare = NULL;
 
-	if (list == NULL)
-	{
-		free(list);
-		return (0);
-	}
-
 	tort = list;
+	hare = list;
 
-	hare = tort;
+	if (list == NULL)
+		return (0);
 
-	while (tort && hare && hare != NULL)
-	{
+	do {
+		if (hare->next == NULL || hare->next->next == NULL)
+			return (0);
+
 		tort = tort->next;
-		hare = hare->next;
+		hare = hare->next->next;
+	} while (hare != tort);
 
-		if (tort != hare)
-		{
-			tort = tort->next;
-			hare = hare->next->next;
-		}
-	}
-
-	return (0);
+	return (1);
 }
