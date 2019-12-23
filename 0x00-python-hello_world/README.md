@@ -1,6 +1,5 @@
 # Intro to Python
 
-
 ### General
 
 - Who created Python
@@ -11,7 +10,9 @@
 - How to print text and variables using print
 - How to use strings
 - What are indexing and slicing in Python
-- What is the official Holberton Python coding style and how to check your code with PEP 8
+- How to check your code with `PEP 8`
+
+*****************
 
 ### Requiremnents
 
@@ -35,6 +36,8 @@
 - Code should follow the `PEP 8` style (version 1.7.*)
 - All files must be executable
 - The first line of all your files should be exactly `#!/usr/bin/python3`
+
+*****************
 
 ### Tasks
 0. Write a Shell script that runs a Python script.
