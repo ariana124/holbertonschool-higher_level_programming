@@ -2,7 +2,6 @@
 
 
 ### General
-
 - What are the most common methods of set and how to use them
 - When to use sets versus lists
 - How to iterate into a set
@@ -10,6 +9,8 @@
 - When to use dictionaries versus lists or sets
 - What is a key in a dictionary
 - How to iterate into a dictionary
+
+*****************
 
 ### Requiremnents
 
@@ -20,8 +21,9 @@
 - All files must be executable
 - The first line of all your files should be exactly `#!/usr/bin/python3`
 
-### Tasks
+*****************
 
+### Tasks
 0. Write a function that computes the square value of all integers of a matrix.
 1. Write a function that replaces all occurrences of an element by another in a new list.
 2. Write a function that adds all unique integers in a list (only once for each integer).
