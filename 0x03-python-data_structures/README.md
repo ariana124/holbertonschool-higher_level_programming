@@ -2,7 +2,6 @@
 
 
 ### General
-
 - What are lists and how to use them
 - What are the differences and similarities between strings and lists
 - What are the most common methods of lists and how to use them
@@ -14,6 +13,8 @@
 - What is tuple packing
 - What is sequence unpacking
 - What is the del statement and how to use it
+
+*****************
 
 ### Requiremnents
 
@@ -32,6 +33,8 @@
 - No more than 5 functions per file
 - Not allowed to use global variables
 - Prototypes of all your functions should be included in your header file called `lists.h`
+
+*****************
 
 ### Tasks
 0. Write a function that prints all integers of a list.
