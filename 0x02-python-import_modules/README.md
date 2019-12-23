@@ -10,6 +10,8 @@
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
 
+*****************
+
 ### Requiremnents
 
 #### Python Scripts
@@ -19,8 +21,9 @@
 - All files must be executable
 - The first line of all your files should be exactly `#!/usr/bin/python3`
 
-### Tasks
+*****************
 
+### Tasks
 0. Write a program that imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`.
 1. Write a program that imports functions from the file `calculator_1.py`, does some maths, and prints the result.
 2. Write a program that prints the number of and the list of its arguments.
