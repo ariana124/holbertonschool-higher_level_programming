@@ -12,7 +12,7 @@
 
 *****************
 
-### Requiremnents
+### Requirements
 
 #### Python Scripts
 - Allowed editors: `vi`, `vim`, `emacs`
