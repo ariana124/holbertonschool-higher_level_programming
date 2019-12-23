@@ -16,6 +16,8 @@
 - Scope of variables
 - What are the arithmetic operators and how to use them
 
+*****************
+
 ### Requiremnents
 
 #### Python Scripts
@@ -24,6 +26,8 @@
 - Code should follow the `PEP 8` style (version 1.7.*)
 - All files must be executable
 - The first line of all your files should be exactly `#!/usr/bin/python3`
+
+*****************
 
 ### Tasks
 0. Complete the source code in order to print whether the number stored in the variable `number` is positive or negative.
