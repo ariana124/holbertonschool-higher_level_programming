@@ -12,16 +12,16 @@ Normal Usage:
 
 	>>> text_indentation("Hello World. This is a string")
 	Hello World.
-	<\n>
+	<BLANKLINE>
 	This is a string
 
 	>>> text_indentation("Hello World: Again. This is another string?")
 	Hello World:
-	<\n>
+	<BLANKLINE>
 	Again.
-	<\n>
+	<BLANKLINE>
 	This is another string?
-	<\n>
+	<BLANKLINE>
 
 Printing with nonstrings:
 	>>> text_indentation([2, 4, 6, 8])
