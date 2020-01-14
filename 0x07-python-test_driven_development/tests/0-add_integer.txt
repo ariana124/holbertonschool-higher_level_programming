@@ -10,6 +10,9 @@ Normal Usage:
         >>> add_integer(2, 3)
         5
 
+	>>> add_integer(4)
+	102
+
 Adding an integer and a string:
         >>> add_integer("super", 4)
         Traceback (most recent call last):
