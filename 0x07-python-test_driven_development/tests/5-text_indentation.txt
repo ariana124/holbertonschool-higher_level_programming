@@ -1,0 +1,35 @@
+Module 5-text_indentation.py
+============================
+Using ``text_indentation``
+----------------------------
+
+Import:
+        >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Normal Usage:
+        >>> text_indentation("Hello World")
+	Hello World
+
+	>>> text_indentation("Hello World. This is a string")
+	Hello World.
+	<\n>
+	This is a string
+
+	>>> text_indentation("Hello World: Again. This is another string?")
+	Hello World:
+	<\n>
+	Again.
+	<\n>
+	This is another string?
+	<\n>
+
+Printing with nonstrings:
+	>>> text_indentation([2, 4, 6, 8])
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+	>>> text_indentation(5)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
