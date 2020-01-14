@@ -1,0 +1,33 @@
+Module 3-say_my_name.py
+=======================
+Using ``say_my_name``
+-----------------------
+
+Import:
+        >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Usage:
+	>>> say_my_name("Ariana", "Bibiano")
+	My name is Ariana Bibiano
+
+Printing with non-integer parameter:
+	>>> say_my_name(11, "Bibiano")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+	>>> say_my_name("Ariana", -24)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+	>>> say_my_name([3,6,9], "Bibiano")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Printing with more than 2 arguments:
+	>>> say_my_name("Ariana", "Bibiano", "Python")
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
