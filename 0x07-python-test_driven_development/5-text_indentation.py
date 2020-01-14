@@ -10,5 +10,7 @@ def text_indentation(text):
     for c in text:
         string += c
         if c in schar:
-            string += "\n\n"
-    print(string, end='')
+            print(string.strip())
+            print()
+            string = ""
+    print(string.strip(), end='')
