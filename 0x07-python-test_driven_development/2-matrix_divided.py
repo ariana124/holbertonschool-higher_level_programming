@@ -7,14 +7,13 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
+    m = "matrix must be a matrix (list of lists) of integers/floats"
     for y in matrix:
         if not isinstance(y, list):
-            raise TypeError("matrix must be a matrix (list of lists) of \
-            integers/floats")
+            raise TypeError(m)
         for x in y:
             if not isinstance(x, int) and not isinstance(x, float):
-                raise TypeError("matrix must be a matrix (list of lists) of \
-                integers/floats")
+                raise TypeError(m)
 
     for y in range(1, len(matrix)):
         if len(matrix[y]) != len(matrix[0]):
