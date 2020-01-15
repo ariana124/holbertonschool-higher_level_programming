@@ -13,7 +13,7 @@ Normal Usage:
 
 	>>> matrix = [[-2, -4, -6], [-3, -5, -7]]
 	>>> matrix_divided(matrix, -1)
-	[[2, 4, 6], [3, 5, 7]]
+	[[2.0, 4.0, 6.0], [3.0, 5.0, 7.0]]
 
 Checking for equal length lists:
 	>>> matrix = [[9, 8, 7], [6, 5, 4, 3]]
@@ -30,6 +30,7 @@ Checking with nonlists:
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	>>> matrix = [[1, 'b', 3], [7, 8, 9]]
+	>>> matrix_divided(matrix, 8)
 	Traceback (most recent call last):
 	...
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
