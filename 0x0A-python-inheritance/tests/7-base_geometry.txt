@@ -1,0 +1,70 @@
+Module 7-base_geometry.py
+=======================
+Using ``BaseGeometry``
+-----------------------
+
+Import:
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Normal Usage:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("integer", 24)
+
+
+Printing a string:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("string", "geometry")
+	Traceback (most recent call last):
+	...
+	TypeError: string must be an integer
+
+
+Printing with a float:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("float", 9.8)
+        Traceback (most recent call last):
+        ...
+        TypeError: float must be an integer
+
+
+Printing with negative or 0:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("negative", -1)
+        Traceback (most recent call last):
+        ...
+        ValueError: negative must be greater than 0
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("zero", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: zero must be greater than 0
+
+
+Checking for unimplemented area method:
+	>>> bg = BaseGeometry()
+        >>> bg.area()
+        Traceback (most recent call last):
+        ...
+        Exception: area() is not implemented
+
+
+Checking for too many or too few arguments:
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator()
+        Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator(4)
+        Traceback (most recent call last):
+        ...
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator( , )
+	Traceback (most recent call last):
+	...
+	SyntaxError: invalid syntax
