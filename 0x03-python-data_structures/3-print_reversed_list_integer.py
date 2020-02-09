@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module
+Module containing the function print_reversed_list_integer
 """
 
 
