@@ -1,6 +1,6 @@
 ## Higher Level Programming
 
-> This repository contains projects coded primarily in Python, with a few Bash scripts and C.
+> This repository contains projects coded primarily in Python, with a few written in Bash and C.
 
 | Project | Description |
 |--|--|
