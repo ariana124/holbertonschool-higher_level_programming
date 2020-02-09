@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""
+Module that contains the function add_tuple
+"""
 
 
 def add_tuple(tuple_a=(), tuple_b=()):
+    """ returns the sum of 2 tuples """
     if len(tuple_a) < 1:
         a1 = 0
     else:
