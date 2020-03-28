@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Contains the script that lists all states starting with a capital N
-from the database hbtn_0e_0_usa
+Contains a script that filters state names based on user input from
+the database hbtn_0e_0_usa
 """
 
 
