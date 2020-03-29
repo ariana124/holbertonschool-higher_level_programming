@@ -19,7 +19,7 @@ if __name__ == "__main__":
                          passwd=passwd, db=database)
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id;")
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
     rows = cur.fetchall()
     for state in rows:
         print(state)
