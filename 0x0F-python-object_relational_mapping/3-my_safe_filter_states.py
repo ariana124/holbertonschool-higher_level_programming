@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Contains a script that filters state names based on user input from
-the database hbtn_0e_0_usa
+the database hbtn_0e_0_usa and handles SQL injection
 """
 
 
