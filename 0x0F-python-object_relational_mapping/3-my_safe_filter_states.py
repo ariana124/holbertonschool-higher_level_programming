@@ -21,7 +21,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states WHERE name = '{}' \
-    ORDER BY id;".format(sname))
+    ORDER BY id;".format(sname, ))
 
     rows = cur.fetchall()
     for state in rows:
