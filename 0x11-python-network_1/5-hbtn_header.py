@@ -4,9 +4,9 @@ script that takes in a URL, sends a request to the URL and displays
 the value of the variable X-Request-Id in the response header
 """
 import requests
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
-    response = requests.get(argv[1])
-    print(response.headers["X-Request-Id"])
+    response = requests.get(sys.argv[1])
+    print(response.headers['X-Request-Id'])
