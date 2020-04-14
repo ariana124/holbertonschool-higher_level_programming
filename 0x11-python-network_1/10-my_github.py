@@ -12,7 +12,7 @@ if __name__ == "__main__":
     user = argv[1]
     pswd = argv[2]
 
-    response = requests.get(url, auth=HTTPBasicAuth(user, pswd))
+    response = requests.get(url, auth=(user, pswd))
     r_json = response.json()
 
     print(r_json.get("id"))
