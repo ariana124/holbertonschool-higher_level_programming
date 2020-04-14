@@ -13,14 +13,15 @@ if __name__ == "__main__":
     else:
         q = argv[1]
 
-    url = "http://0.0.0.0:5000/search_user"
-    response = requests.post(url, data={'q': q})
+    try:
+        url = "http://0.0.0.0:5000/search_user"
+        response = requests.post(url, data={'q': q})
 
-    r_json = response.json()
+        r_json = response.json()
 
-    if response.headers.get('content-type') is 'application/json':
+        if "id" in r_json and "name" in r_json:
+             print("[{}] {}".format(r_json.get('id'), r_json.get('name')))
+        else:
+            print("No result")
+    except ValueError:
         print("Not a valid JSON")
-    elif len(r_json) == 0:
-        print("No result")
-    else:
-        print("[{}] {}".format(r_json.get('id'), r_json.get('name')))
