@@ -20,7 +20,7 @@ if __name__ == "__main__":
         r_json = response.json()
 
         if "id" in r_json and "name" in r_json:
-             print("[{}] {}".format(r_json.get('id'), r_json.get('name')))
+            print("[{}] {}".format(r_json.get('id'), r_json.get('name')))
         else:
             print("No result")
     except ValueError:
