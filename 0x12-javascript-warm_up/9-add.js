@@ -1,10 +1,12 @@
 #!/usr/bin/node
 // Prints the sum of two integers
-function add(a, b) {
-  let sum = a + b
+function add (a, b) {
+  const sum = a + b;
   console.log(sum);
 }
 
-let a = parseInt(process.argv[2]);
-let b = parseInt(process.argv[3]);
+let a = process.argv[2];
+a = parseInt(a);
+let b = process.argv[3];
+b = parseInt(b);
 add(a, b);
